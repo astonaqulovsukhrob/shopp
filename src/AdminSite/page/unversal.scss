@@ -1,0 +1,130 @@
+:root {
+  --background: #15be77;
+  --inputColor: #1ecd83;
+}
+
+// Navbar
+
+.navbar_left {
+  position: fixed;
+  background: #fff;
+  top: 58px;
+  bottom: 0;
+  width: 210px;
+  transition: 0.1s !important;
+  -webkit-box-shadow: 0px 8px 9px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 8px 9px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 8px 9px 0px rgba(34, 60, 80, 0.2);
+  a {
+    border-left: 4px solid #fff;
+    transition: all 0.2s;
+    color: #333;
+    &:hover {
+      border-color: var(--inputColor);
+      background: #f4f7fd;
+      color: #333;
+    }
+  }
+  .seact_icon {
+    svg {
+      margin-top: -4px;
+    }
+  }
+
+  .active {
+    border-color: var(--inputColor);
+    background: #15be77;
+    color: #fff;
+    a {
+      color: #444 !important;
+    }
+    &:hover {
+      background: #f4f7fd;
+    }
+  }
+}
+
+.navbar-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: var(--background);
+  box-shadow: 0 1px 10px #ccc;
+  .navbar_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 58px;
+    padding: 1rem;
+    .navbar_search {
+      display: flex;
+      align-items: center;
+      background: var(--inputColor);
+      padding: 0.4rem 1.2rem;
+      border-radius: 10px;
+      input {
+        border: none;
+        background: var(--inputColor);
+        outline: none;
+        color: #fff;
+        &::placeholder {
+          color: #fff;
+        }
+      }
+    }
+    .navbar_admin {
+      display: flex;
+      align-items: center;
+      h6 {
+        color: #fff;
+      }
+      img {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  color: white;
+}
+
+//
+.main-nav {
+  width: calc(100% - 280px);
+  margin-left: 250px;
+  margin-top: 80px;
+  background: #fff;
+  padding: 1rem;
+  height: 85vh;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 1px 9px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 1px 9px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 1px 9px 0px rgba(34, 60, 80, 0.2);
+  // opacity: 0;
+  // animation: anim 0.5s forwards;
+}
+
+// @keyframes anim {
+//   0% {
+//     opacity: 0;
+//     transform: translateY(2%);
+//   }
+//   100% {
+//     opacity: 1;
+//     transform: translateY(0);
+//   }
+// }
+
+.btn {
+  padding: 0.2rem 0.4rem;
+}
+
+// .dashboard {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   height: 90vh;
+// }
